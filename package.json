@@ -1,0 +1,15 @@
+{
+  "name": "auto-form-filling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pollencio/auto-form-filling.git",
+  "author": "Yeliana Torres <yelis124@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^10.2.0"
+  }
+}
