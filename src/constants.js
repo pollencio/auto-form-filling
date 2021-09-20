@@ -4,7 +4,7 @@ export const baseUrl =
 export const formIds = {
   project: 1581040845,
   meetingType: 1910783278,
-  date: 1593095041,
+  date: 1593095041, // must use format yyyy-mm-dd
   meetingPlaceLink: 1271761581,
   fullName: 1176960872,
   documentId: 1665546399,

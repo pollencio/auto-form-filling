@@ -1,26 +1,67 @@
 import puppeteer from "puppeteer";
-import { baseUrl, formIds } from "./constants.mjs";
-import dummyUser from "./dummy-data/dummyUser.mjs";
+import { baseUrl, formIds } from "./constants.js";
+import dummyUser from "./dummy-data/dummyUser.js";
 
 function getUserUrl({ baseUrl, formIds, userData }) {
-  const parameters = Object.keys(formIds).reduce((acc, item) => {
-    return acc + `entry.${formIds[item]}=${userData[item]}&`;
-  }, "");
-  return baseUrl + parameters;
+  try {
+    const parameters = Object.keys(formIds).reduce((acc, item, index) => {
+      return acc + `entry.${formIds[item]}=${userData[item]}&`;
+    }, "");
+    return baseUrl + parameters.slice(0, -1); // slice to remove last '&' character
+  } catch (error) {
+    console.error("Error getting user url.", error);
+  }
 }
 
-async function launchPuppeteer() {
+function clickButton({ page, type }) {
+  let query;
+  switch (type) {
+    case "send":
+      query = "Enviar";
+      break;
+    case "next":
+      query = "Siguiente";
+      break;
+    default:
+      console.error("Button type not supported");
+  }
+
+  return page.evaluate(
+    (query) =>
+      [
+        ...document.querySelectorAll(
+          "span.appsMaterialWizButtonPaperbuttonLabel"
+        ),
+      ]
+        .filter((element) => element.innerText.includes(query))[0]
+        .parentNode.parentNode.click(),
+    query
+  );
+}
+
+async function sendUserForm(userData) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto(url, { waitUntil: "networkidle2" });
-  await page.screenshot({ path: "src/screenshots/form.png" });
-  await page.pdf({ path: "src/screenshots/form.pdf", format: "a4" });
+
+  // 🔗 1. Get form url with user data filled in
+  const userUrl = getUserUrl({ baseUrl, formIds, userData });
+  await page.goto(userUrl, { waitUntil: "networkidle2" });
+  await page.screenshot({ path: "src/screenshots/form1.png" });
+
+  // ⏭ 2. Click the first 'next' button
+  await clickButton({ page, type: "next" });
+  await page.screenshot({ path: "src/screenshots/form2.png" });
+
+  // ⏭ 3. Click the second 'next' button
+  await clickButton({ page, type: "next" });
+  await page.screenshot({ path: "src/screenshots/form3.png" });
+
+  // ✅ 4. Click the 'send' button
+  // await clickButton({ page, type: "send" });
+  // await page.screenshot({ path: "src/screenshots/form4.png" });
 
   await browser.close();
 }
 
-console.log("----URL", baseUrl);
-console.log("----FORM IDS", formIds);
-console.log("----USER DATA", dummyUser);
-
-console.log(getUserUrl(baseUrl, formIds, dummyUser));
+// 🏃‍♀️ Run the app here!
+sendUserForm(dummyUser);
