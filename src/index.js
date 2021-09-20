@@ -50,11 +50,18 @@ async function sendUserForm(userData) {
 
   // ⏭ 2. Click the first 'next' button
   await clickButton({ page, type: "next" });
+  await page.waitForNavigation({ waitUntil: "networkidle2" });
   await page.screenshot({ path: "src/screenshots/form2.png" });
 
   // ⏭ 3. Click the second 'next' button
   await clickButton({ page, type: "next" });
+  await page.waitForNavigation({ waitUntil: "networkidle2" });
   await page.screenshot({ path: "src/screenshots/form3.png" });
+
+  // ⏭ 4. Click the third 'next' button
+  await clickButton({ page, type: "next" });
+  await page.waitForNavigation({ waitUntil: "networkidle2" });
+  await page.screenshot({ path: "src/screenshots/form4.png" });
 
   // ✅ 4. Click the 'send' button
   // await clickButton({ page, type: "send" });
