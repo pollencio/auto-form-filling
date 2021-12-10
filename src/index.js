@@ -1,6 +1,17 @@
 import puppeteer from "puppeteer";
 import { baseUrl, formIds } from "./constants.js";
-import dummyUser from "./dummy-data/dummyUser.js";
+//import dummyUser from "./dummy-data/dummyUser.js";
+
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
+
+import errorHandler from '../middlewares/errors/errorHandler.js';
+
+const app = express();
+
+
+
 
 function getUserUrl({ baseUrl, formIds, userData }) {
   try {
@@ -71,4 +82,27 @@ async function sendUserForm(userData) {
 }
 
 // 🏃‍♀️ Run the app here!
-sendUserForm(dummyUser);
+//sendUserForm(dummyUser);  ya no :P
+
+
+function main(){
+  //body parser
+  app.use(express.json()); 
+  app.use(morgan('tiny'))
+  //app.use(errorHandler.errorHandler)
+  app.use(cors())
+  
+  
+  //app.use('/api/assistants', require('./constants.js'))
+  console.log('hola mundo')
+  app.set('puerto', process.env.PORT || 4500)
+
+  app.listen(app.get('puerto'), () => {
+    console.log(`Listening http://localhost:${app.get('puerto')}`);
+  });
+  
+  //sendUserForm(dummyUser);
+
+}
+
+main();
