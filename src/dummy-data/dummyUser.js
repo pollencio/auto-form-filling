@@ -8,9 +8,9 @@ export default {
     email: "yawewqem@unal.edu.co",
     gender: "Mujer",
     disability: "NO",
-    cellphone: "3014362386",
-    userType: "Egresado",
+    cellphone: "3124567895",
+    userType: "Estudiante+de+pregrado",
     academicProgram: "Ingeniería de Sistemas y Computación",
     faculty: "Ingeniería",
-    //department: "Ingeniería de Sistemas e Industrial",
+    department: "Ingeniería de Sistemas e Industrial",
   };

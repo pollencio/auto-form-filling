@@ -1,5 +1,5 @@
 export const baseUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLScVJ6BUWkkYeUveEaP0IuodShVPSdALgWCWSaZWHBKeHIlEBg/viewform?usp=sf_link";
+  "https://docs.google.com/forms/d/e/1FAIpQLScVJ6BUWkkYeUveEaP0IuodShVPSdALgWCWSaZWHBKeHIlEBg/viewform?";
 
 export const formIds = {
   project: 1731898983,
@@ -17,20 +17,3 @@ export const formIds = {
   faculty: 150600227,
   //department: ,
 };
-
-export const userData = {
-    project: "Proyecto+Eléctrica",
-    meetingType: "Taller",
-    date: "2021-09-28",
-    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
-    fullName: "Yelinguis Tinguis",
-    documentId: "1234567890",
-    email: "yawewqem@unal.edu.co",
-    gender: "Mujer",
-    disability: "NO",
-    cellphone: "3014362386",
-    userType: "Egresado",
-    academicProgram: "Ingeniería de Sistemas y Computación",
-    faculty: "Ingeniería",
-    //department: "Ingeniería de Sistemas e Industrial",
-  };
