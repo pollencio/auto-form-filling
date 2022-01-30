@@ -40,43 +40,44 @@ function clickButton({ page, type }) {
   );
 }
 
-async function sendUserForm(userData) {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
+function sendUserForm(allData) {
+  allData.map(async (userData) => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
 
-  // 🔗 1. Get form url with user data filled in
-  const userUrl = getUserUrl({ baseUrl, formIds, userData });
-  await page.goto(userUrl, { waitUntil: "networkidle2" });
-  await page.screenshot({ path: "src/screenshots/form1.png" });
- 
-  // ⏭ 2. Click the first 'next' button
-  await clickButton({ page, type: "next" });
-  await page.waitForNavigation({ waitUntil: "networkidle2" });
-  await page.screenshot({ path: "src/screenshots/form2.png" });
-
-  // ⏭ 3. Click the second 'next' button
-  await clickButton({ page, type: "next" });
-  await page.waitForNavigation({ waitUntil: "networkidle2" });
-  await page.screenshot({ path: "src/screenshots/form3.png" });
-
-  if (userData.userType != "Administrativo" && userData.userType != "Docente") {
-    // ⏭ 4 Academic program section. (Estudiantes pregrado, posgrado y egresados). Click the third 'next' button
+    // 🔗 1. Get form url with user data filled in
+    const userUrl = getUserUrl({ baseUrl, formIds, userData });
+    await page.goto(userUrl, { waitUntil: "networkidle2" });
+    await page.screenshot({ path: "src/screenshots/form1.png" });
+  
+    // ⏭ 2. Click the first 'next' button
     await clickButton({ page, type: "next" });
     await page.waitForNavigation({ waitUntil: "networkidle2" });
-    await page.screenshot({ path: "src/screenshots/form4.png" });
-  }
+    await page.screenshot({ path: "src/screenshots/form2.png" });
 
-  // ⏭ 5 Faculty section. (Administrativos y Docentes) Click the fifth 'next' button
-  await clickButton({ page, type: "next" });
-  await page.waitForNavigation({ waitUntil: "networkidle2" });
-  await page.screenshot({ path: "src/screenshots/form5.png" });
+    // ⏭ 3. Click the second 'next' button
+    await clickButton({ page, type: "next" });
+    await page.waitForNavigation({ waitUntil: "networkidle2" });
+    await page.screenshot({ path: "src/screenshots/form3.png" });
 
-  // ✅ 6 Final section: send the form. Click the 'send' button -> 
-  await clickButton({ page, type: "send" });
-  await page.screenshot({ path: "src/screenshots/form5.png" });
+    if (userData.userType != "Administrativo" && userData.userType != "Docente") {
+      // ⏭ 4 Academic program section. (Estudiantes pregrado, posgrado y egresados). Click the third 'next' button
+      await clickButton({ page, type: "next" });
+      await page.waitForNavigation({ waitUntil: "networkidle2" });
+      await page.screenshot({ path: "src/screenshots/form4.png" });
+    }
+
+    // ⏭ 5 Faculty section. (Administrativos y Docentes) Click the fifth 'next' button
+    await clickButton({ page, type: "next" });
+    await page.waitForNavigation({ waitUntil: "networkidle2" });
+    await page.screenshot({ path: "src/screenshots/form5.png" });
+
+    // ✅ 6 Final section: send the form. Click the 'send' button -> 
+    await clickButton({ page, type: "send" });
+    await page.screenshot({ path: "src/screenshots/form5.png" });
 
 
-  await browser.close();
+    await browser.close();})
 }
 
 // 🏃‍♀️ Run the app here!
