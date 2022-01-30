@@ -1,0 +1,16 @@
+export default {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3014362386",
+    userType: "Egresado",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    //department: "Ingeniería de Sistemas e Industrial",
+  };
