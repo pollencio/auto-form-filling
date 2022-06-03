@@ -1,0 +1,280 @@
+{
+    "project": "Proyecto+El%C3%A9ctrica",
+    "meetingType": "Taller",
+    "date": "February 10, 2022",
+    "meetingPlaceLink": "Juan Felipe Parra Runceria, Isaac Zarate Reyes, Sebastian Abril Gonzalez, Brayan David Quintero Ramos",
+    "fullName": "Juan Felipe Parra Runceria",
+    "documentId": "February 10, 2022 9:27 PM",
+    "Ult. vez editado en": "February 11, 2022 8:55 PM"
+  },
+
+
+
+
+
+{
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Administrativo",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+
+
+
+
+
+
+
+[
+  {
+    "Celular": "3134565945",
+    "Correo": "jparrar@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1019149202",
+    "Facultad": "Ingeniería",
+    "Genero": "Hombre",
+    "Nombre": "Juan Felipe Parra Runceria",
+    "Programa": "Ingeniería Mecánica",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3002806139",
+    "Correo": "agochoad@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1090388349",
+    "Facultad": "Ingeniería",
+    "Genero": "Hombre",
+    "Nombre": "Alexei Gabriel Ochoa Duarte",
+    "Programa": "Doctorado en Ingeniería - Industria y Organizaciones",
+    "Tipo": "Estudiante de Postgrado"
+  },
+  {
+    "Celular": "3058893762",
+    "Correo": "izarater@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1014258629",
+    "Facultad": "Ingeniería",
+    "Genero": "Hombre",
+    "Nombre": "Isaac Zarate Reyes",
+    "Programa": "Ingeniería de Sistemas y Computación",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3004522632",
+    "Correo": "Dteranf@unal.edu.co ",
+    "Discapacidad": "No",
+    "Documento": "1019153786",
+    "Facultad": "Ingeniería ",
+    "Genero": "Hombre",
+    "Nombre": "Daniel alejandro Terán Fernández ",
+    "Programa": "Ingeniería electrica",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3003460990",
+    "Correo": "bgaleanom@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1000725766",
+    "Facultad": "Ingeniería",
+    "Genero": "Hombre",
+    "Nombre": "Brandon Alexis Galeano Martínez",
+    "Programa": "Ing. Electrónica ",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3015462386",
+    "Correo": "yatorresm@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1032501894",
+    "Facultad": "Ingeniería",
+    "Genero": "Mujer",
+    "Nombre": "Yeliana Andrea Torres Medina",
+    "Programa": "Ingeniería de Sistemas y Computación",
+    "Tipo": "Egresado"
+  },
+  {
+    "Celular": "3204699182",
+    "Correo": "lkserratot@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1013674836",
+    "Facultad": "Ingeniería",
+    "Genero": "Mujer",
+    "Nombre": "Leidy Katherine Serrato Triviño",
+    "Programa": "Ingeniería química",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3144864938",
+    "Correo": "sabrilg@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1016093109",
+    "Facultad": "Ingenieria",
+    "Genero": "Hombre",
+    "Nombre": "Sebastian Abril Gonzalez",
+    "Programa": "Ingenieria electrica",
+    "Tipo": "Egresado"
+  },
+  {
+    "Celular": "3196988470",
+    "Correo": "jipmorenoch@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1015473551",
+    "Facultad": "Medicina",
+    "Genero": "Mujer",
+    "Nombre": "Jimena del Pilar Moreno Chaves",
+    "Programa": "Medicina",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3203269157",
+    "Correo": "bdquinteror@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1070967970",
+    "Facultad": "Ingeniería",
+    "Genero": "Hombre",
+    "Nombre": "Brayan David Quintero Ramos",
+    "Programa": "Ingeniería electrónica",
+    "Tipo": "Estudiante de pregrado"
+  },
+  {
+    "Celular": "3194404172",
+    "Correo": "Caprietog@unal.edu.co",
+    "Discapacidad": "No",
+    "Documento": "1000364337",
+    "Facultad": "Ingenieria",
+    "Genero": "Hombre",
+    "Nombre": "Camilo Prieto Gomez",
+    "Programa": "Ingenieria electrica ",
+    "Tipo": "Estudiante de pregrado"
+  }
+]
+
+
+
+
+
+
+export default [
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Estudiante+de+pregrado",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Estudiante+de+pregrado",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Estudiante+de+Postgrado",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Estudiante+de+pregrado",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Estudiante+de+Postgrado",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Docente",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+  {
+    project: "Proyecto+El%C3%A9ctrica",
+    meetingType: "Taller",
+    date: "2021-09-28",
+    meetingPlaceLink: "https://meet.google.com/qkm-huuu-ngz",
+    fullName: "Yelinguis Tinguis",
+    documentId: "1234567890",
+    email: "yawewqem@unal.edu.co",
+    gender: "Mujer",
+    disability: "NO",
+    cellphone: "3124567895",
+    userType: "Administrativo",
+    academicProgram: "Ingeniería de Sistemas y Computación",
+    faculty: "Ingeniería",
+    department: "Ingeniería de Sistemas e Industrial",
+  },
+];
