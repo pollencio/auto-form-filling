@@ -9,7 +9,7 @@ export const formIds = {
   meetingPlaceLink: 309080198, //
   fullName: 1866984732, // If otro or egresado
   documentId: 71221724, // 
-  documentId2: 1197924690, // If Otro or Egresado
+  documentId2: 1197924690, // If Otro or egresado
   email: 1592447237, // 
   email2: 1090749917, // If otro or egresado
   gender: 1452722238, // If otro or egresado
